@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MastrPlanr</title>
+<link rel="stylesheet" type="text/css" href="css/abtstyle.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+
+
+    <nav>
+
+      
+      <div class="row clearfix">
+        <img src="images/logo.jpg" width="500px" class="logo">
+        <ul class="main-nav animated slideInDown"  id="check-class">
+          <li> <a href="index.html">HOME</a></li>
+          <li> <a href="abt.html">ABOUT</a></li>
+          <div class="dropdown">
+          <li  class="dropbtn"> <a href="services.html">SERVICES</a></li>
+          <div class="dropdown-content">
+             <a href="corporate.html">Corporate</a>
+             <a href="weddings.html">Weddings & Destination Weddings </a>
+             <a href="college.html">School/Colleges</a>
+             </div>
+            </div>
+          <li> <a href="gallery.html">GALLERY</a></li>
+          <li> <a href="contact.html">CONTACT</a></li>
+          <li><a  onclick="goBack()" style=" background-color: #4CAF50; /* Green */
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                background-color: transparent; color: white;
+                font-size: 16px;">Go Back</a></li>
+
+              <script>
+              function goBack() {
+                window.history.back();
+              }
+              </script>
+
+          
+        </ul>
+      </div>
+        <div align="center">
+        <a href="conn.html" class="btn btn-full">Login as customer</a>
+              <a onclick="document.getElementById('id02').style.display='block'" class="btn btn-nav" >login as admin</a>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action=regadmin.php method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <img src="images/LoginIcon.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+       <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+        
+      </div>
+    </nav>
+    <div class="footer">
+  <div class="three-column-footer-contact-form-container">
+  <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
+    <div class="footer-left" data-equalizer-watch>
+      <div class="baseline">
+        <div class="contact-details">
+          <h6>Contact details</h6>
+          <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
+          <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
+          <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Tipu Sultan Nagar, Belagavi, Karnataka, India</p>
+        </div>
+       
+      </div>
+     </div>
+   
+    <div class="footer-right" data-equalizer-watch>
+      <div class="baseline">
+        <img class="thumbnail" src="http://placehold.it/100">
+        <h6>Opening times</h6>
+        <p>Mon - Fri 9:00am - 5:00pm</p>
+        <p>Sat 9:00am - 8:00pm</p>
+        <p>Sun 9:00am - 4:00pm</p>
+        
+      </div>
+    </div>
+     <div class="social">
+          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </div>
+  </footer>
+</div>
+</div>
+
+</header>
+</body>
+</html>

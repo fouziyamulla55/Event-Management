@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MastrPlanr</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			
+			<div class="row clearfix">
+				<img src="images/logo.jpg" width="500px" class="logo">
+				<ul class="main-nav animated slideInDown"  id="check-class">
+					<li> <a href="index.html">HOME</a></li>
+					<li> <a href="abt.html">ABOUT</a></li>
+					<div class="dropdown">
+					<li  class="dropbtn"> <a href="services.html">SERVICES</a></li>
+					<div class="dropdown-content">
+    				 <a href="corporate.html">Corporate</a>
+   					 <a href="weddings.html">Weddings & Destination Weddings </a>
+   					 <a href="college.html">School/Colleges</a>
+  					 </div>
+  					</div>
+					<li> <a href="gallery.html">GALLERY</a></li>
+					<li> <a href="contact.html">CONTACT</a></li>
+
+					
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars" aria-hidden="true"></i></a>
+				
+			</div>
+		</nav>
+
+             <div class="main-content-header">
+             	<h1><span class="colorchange">MastrPlanr</span></h1>
+             	<a href="contact.html" class="btn btn-full">click to book</a>
+             	<a href="contact.html" class="btn btn-nav" >contact</a>
+             </div>
+
+      
+
+	</header>
+	<script type="text/javascript">
+		function slideshow(){
+			var x=document.getElementById('check-class');
+			if(x.style.display==="none"){
+				x.style.display="block";
+
+			}else{
+				x.style.display="none";
+
+			}
+		}
+	</script>
+	
+
+</body>
+</html>

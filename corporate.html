@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MastrPlanr</title>
+<link rel="stylesheet" type="text/css" href="css/stylecorp.css">
+<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      
+      <div class="row clearfix">
+        <img src="images/logo.jpg" width="500px" class="logo">
+        <ul class="main-nav">
+          <li> <a href="index.html">HOME</a></li>
+          <li> <a href="abt.html">ABOUT</a></li>
+          <div class="dropdown">
+          <li  class="dropbtn"> <a href="services.html">SERVICES</a></li>
+          <div class="dropdown-content">
+             <a href="corporate.html">Corporate</a>
+             <a href="weddings.html">Weddings & Destination Weddings </a>
+             <a href="college.html">School/Colleges</a>
+             </div>
+            </div>
+          <li> <a href="gallery.html">GALLERY</a></li>
+          <li> <a href="contact.html">CONTACT</a></li>
+           <li><a  onclick="goBack()" style=" background-color: #4CAF50; /* Green */
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                background-color: transparent; color: white;
+                font-size: 16px;">Go Back</a></li>
+
+              <script>
+              function goBack() {
+                window.history.back();
+              }
+              </script>
+
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <div class="container">
+      <span class="text1"> Corporate Events</span>
+      <br><br>
+      <span class="text2">Often companies need to celebrate milestones, award achievers and host special corporate events to comemmorate an aspect of their businesses.
+We incorporate our unique approach to corporate events where we try to design an event end-to-end
+based on the personality of your company and bring out the most creatively designed and planned corporate events you could organize.</span>
+
+<div class="container1">
+<div class="slider-image">
+  <img src="images/corporate/11.jpg" alt="">
+  <img src="images/corporate/12.jpg" alt="">
+  <img src="images/corporate/13.jpg" alt="">
+  <img src="images/corporate/14.jpg" alt="">
+  <img src="images/corporate/15.jpg" alt="">
+  
+</div>
+          
+    </div>
+    <span class="text1">Conference & Meets</span>
+    <span class="text2">Conferences enable all attendees within the company to expand their horizons, learn about new innovations in the industry and techniques of accomplishing tasks. They also enable corporates to arrive at important decisions, disseminate knowledge about various updates within the company, initiate crucial agreements with investors, stakeholders, create new launches and more.</span>
+
+    <div class="container1">
+<div class="slider-image">
+  <img src="images/corporate/1corp.jpg" alt="">
+  <img src="images/corporate/2corp.jpg" alt="">
+  <img src="images/corporate/3corp.jpg" alt="">
+  <img src="images/corporate/4corp.jpg" alt="">
+  <img src="images/corporate/15.jpg" alt="">
+  
+</div>
+          
+    </div>
+
+    
+
+  </header>
+  
+<script type="text/javascript">
+  document.onmousemove= animatetext;
+  function animatetext(event){
+    var ani = document.createElement("div");
+    text1.setAttribute("class", "text1");
+    document.body.appendChild(text1);
+
+  }
+
+
+
+</script>
+</body>
+</html>
